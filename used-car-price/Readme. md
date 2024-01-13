@@ -1,0 +1,15 @@
+This folder contains the final submission for my capstone project as a part of Applied Data Sciences Program from MIT Professional Education through Great Learning.
+
+The objective is to predict the price of a used car in Indian used car market space using Machine Learning algorithms.
+
+We had a very highly skewed dataset and needed a log transformation of the target variable. 
+Another big issue with the data was that it was highly biased with records from the economy section of the used car space 
+and have very few high riced luxury cars. This made building the model a challenge.
+
+I used a few commonly used machine learning algorithms, which included Linear Regression, 
+with l2 regularization (ridge) and l1 regularization (lasso) and also (l2/l1) regularization.
+I also tried Decision Trees, Random Forest and XGBoost algorithms 
+and a Sequential model with 5 hidden layers.
+
+XGboost gave the best value for r2 and mae. Since the data was so highly biased and had many outliers,
+I decided to use mae as the evaluation metric to compare the models. ALl the values for rmse, mae displayed are in lakh Indian rupees
